@@ -1,10 +1,10 @@
 import React from 'react';
 import './nav.css';
 
-export default function Nav() {
-  //function newGame(triger){
-    //event.preventDefault();
-  //}
+export default function Nav(props) {
+  // function newGame(triger){
+  //   event.preventDefault();
+  // }
 
   return (
       <nav>
@@ -16,7 +16,7 @@ export default function Nav() {
           </li>
 
           <li>
-            <a href="#" type="button" className="new">
+            <a href="#" type="button" onClick={props.onNewGameClick} className="new">
               New Game
             </a>
           </li>

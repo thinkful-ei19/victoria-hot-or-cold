@@ -7,9 +7,13 @@ import Nav from './nav';
 export default function App(){
   return (
         <div>
-          <Nav />
+          <Nav onNewGameClick = {onNewGame}/>
           <Game />
           <Feedback />
         </div>
   )
+}
+
+const onNewGame = function(){
+  console.log('new game')
 }
